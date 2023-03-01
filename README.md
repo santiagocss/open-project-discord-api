@@ -62,7 +62,7 @@ Returns information about a Discord server with the specified ID.
 
 ## Example URL
 
-http://localhost:8080/guilds/123456789012345678
+http://localhost:3000/guilds/123456789012345678
 
 # TODO list
 
