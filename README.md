@@ -64,7 +64,7 @@ Returns information about a Discord server with the specified ID.
 
 http://localhost:8080/guilds/123456789012345678
 
-# Example of TODO.md
+# TODO list
 
 This is an example of TODO.md
 
