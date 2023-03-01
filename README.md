@@ -11,7 +11,6 @@ This is a simple RESTful API built with Node.js and Express.js that allows you t
 
 - [Features](#features)
 - [Installation](#installation)
-- [Endpoints](#endpoints)
 - [Example URL](#example-url)
 - [Contributing](#contributing)
 - [License](#license)
