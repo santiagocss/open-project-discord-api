@@ -65,5 +65,5 @@ app.listen(3000, () => {
 
 );
 
-client.login('MTA3NjExMzIxOTE4NzM4ODQ4OA.GHuYJs.kjNXcyZheL5f-70aKUjZ0OP04s2O4XG2O1FuCY');
+client.login('');
 
