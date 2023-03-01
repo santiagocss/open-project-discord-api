@@ -5,7 +5,7 @@ const client = new Client({ intents: 3276799 });
 
 const PAGE_SIZE = 300;
 
-app.get('/guilds/:guildid', (req, res) => {
+app.get('/v1/guilds/:guildid', (req, res) => {
   const guildId = req.params.guildid;
   const guild = client.guilds.cache.get(guildId);
   if (!guild) return res.status(404).send({ message: 'server not found.' });
@@ -36,7 +36,7 @@ app.get('/guilds/:guildid', (req, res) => {
 
 
 
-app.get('/user/:userid', (req, res) => {
+app.get('/v1/user/:userid', (req, res) => {
     const userId = req.params.userid;
     const user = client.users.cache.get(userId);
     if (!user) return res.status(404).send({ message: 'user not found.' });
@@ -58,6 +58,31 @@ app.get('/user/:userid', (req, res) => {
   
     res.send(response);
   });
+
+
+app.get('/v1/guilds/:guildid/:roleid', (req, res) => {
+  const guildId = req.params.guildid;
+  const roleId = req.params.roleid;
+
+  const guild = client.guilds.cache.get(guildId);
+  if (!guild) return res.status(404).send({ message: 'server not found.' });
+
+  const role = guild.roles.cache.get(roleId);
+  if (!role) return res.status(404).send({ message: 'role not found.' });
+
+  const roleMembers = role.members.map((member) => member.id);
+  const response = {
+    roleId: roleId,
+    roleName: role.name,
+    roleColor: role.hexColor,
+    rolePermissions: role.permissions.toArray(),
+    roleMemberCount: role.members.size,
+    roleMembers: roleMembers,
+  };
+
+  res.send(response);
+});
+
 app.listen(3000, () => {
 
     console.log('Server is running on port 3000');
