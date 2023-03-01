@@ -1,0 +1,28 @@
+{
+  "name": "open-project-discord-api-santiago",
+  "version": "1.0.0",
+  "description": "Discord sunucu ve kullanıcı bilgilerine JSON formatında erişebileceğiniz Express.JS ve Discord.JS ile kodlanmış API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagocss/open-project-discord-api.git"
+  },
+  "keywords": [
+    "discordapi",
+    "discordjs",
+    "expressjs"
+  ],
+  "author": "santiago'#0001 - 1070054472031686756",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/santiagocss/open-project-discord-api/issues"
+  },
+  "homepage": "https://github.com/santiagocss/open-project-discord-api#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "express.js": "^1.0.0"
+  }
+}
