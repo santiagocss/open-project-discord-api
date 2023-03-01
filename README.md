@@ -39,30 +39,10 @@ npm install`
 
 ```npm start```
 
-## Endpoints
-
-### `/guilds/:guildid`
-
-Returns information about a Discord server with the specified ID.
-
-- **Method:** GET
-- **URL Parameters:**
-- `guildid`: The ID of the Discord server.
-- **Response:**
-- `id` (string): The ID of the guild.
-- `name` (string): The name of the guild.
-- `photo` (string): The URL of the guild's icon.
-- `rolesCount` (number): The number of roles in the guild.
-- `emojisCount` (number): The number of emojis in the guild.
-- `membersCount` (number): The total number of members in the guild.
-- `onlineMembersCount` (number): The number of members currently online in the guild.
-- `banner` (string): The URL of the guild's banner.
-- `description` (string): The guild's description.
-- `owner` (string): The ID of the guild's owner.
 
 ## Example URL
 
-http://localhost:3000/guilds/123456789012345678
+http://localhost:3000/v1/guilds/123456789012345678
 
 # TODO list
 
@@ -72,17 +52,17 @@ View the raw content of this file to understand the format.
 
 ### Todo
 
-- [ ] npm module will be prepared
+- i have no idea
 
 ### In Progress
 
-- [ ] /guilds/:roleid endpoint will be created.
+- [ ] npm module will be prepared
 
 ### Done ✓
 
 - [x] /guilds/:guildend endpoint is complete.
 - [x] /user/:userid endpoint is complete.
-
+- [x] /guilds/:guildid/:roleid endpoint will be created.
 
 ## Contributing
 
