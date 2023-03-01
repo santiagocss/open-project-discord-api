@@ -64,6 +64,26 @@ Returns information about a Discord server with the specified ID.
 
 http://localhost:8080/guilds/123456789012345678
 
+# Example of TODO.md
+
+This is an example of TODO.md
+
+View the raw content of this file to understand the format.
+
+### Todo
+
+- [ ] npm module will be prepared
+
+### In Progress
+
+- [ ] /guilds/:roleid endpoint will be created.
+
+### Done ✓
+
+- [x] /guilds/:guildend endpoint is complete.
+- [x] /user/:userid endpoint is complete.
+
+
 ## Contributing
 
 Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
